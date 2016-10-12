@@ -15,6 +15,15 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+# twitter bootstrap css & javascript toolkit
+gem 'twitter-bootswatch-rails'
+
+# twitter bootstrap helpers gem, e.g., alerts etc...
+gem 'twitter-bootswatch-rails-helpers'
+
+gem 'sprockets-rails'
+
+gem 'therubyracer'
 
 group :development, :test do
   gem 'byebug'

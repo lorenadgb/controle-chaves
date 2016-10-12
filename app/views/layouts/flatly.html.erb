@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= content_for?(:title) ? yield(:title) : "Controle de Chaves" %></title>
+  <%= csrf_meta_tags %>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+  <%= stylesheet_link_tag "flatly", :media => "all", 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'flatly', :media => 'all', 'data-turbolinks-track' => true  %>
+
+  <%= yield(:page_stylesheet) if content_for?(:page_stylesheet) %>
+
+</head>
+<body>
+<%= render 'layouts/navbar' %>
+
+<div class="container theme-showcase">
+  <%= yield %>
+</div>
+</body>
+</html>

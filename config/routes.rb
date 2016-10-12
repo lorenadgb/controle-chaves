@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
   devise_for :users
 
-  root 'welcome#index'
+  get 'dashboard/overview' => 'dashboard#overview'
+
+  devise_scope :user do
+    root :to => "devise/sessions#new"
+
+    get "signup", to: "devise/registrations#new"
+    get "login",  to: "devise/sessions#new"
+    get "logout", to: "devise/sessions#destroy"
+  end
 end
