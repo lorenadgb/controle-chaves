@@ -32,5 +32,14 @@ end
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
-end
 
+  gem 'pry'
+  gem 'pry-rails'
+  gem 'pry-remote'
+  gem 'pry-stack_explorer'
+  gem 'pry-byebug'
+
+  gem 'better_errors'
+  gem 'web-console', '~> 2.0'
+  gem 'spring'
+end
