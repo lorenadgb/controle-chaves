@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   get 'dashboard/overview' => 'dashboard#overview'
 
+  resources :users
+
   devise_scope :user do
     root :to => "devise/sessions#new"
 
