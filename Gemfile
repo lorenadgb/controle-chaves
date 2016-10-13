@@ -27,6 +27,8 @@ gem 'sprockets-rails'
 
 gem 'therubyracer'
 
+gem 'enumerate_it'
+
 group :development, :test do
   gem 'byebug'
 end

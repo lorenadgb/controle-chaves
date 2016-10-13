@@ -6,6 +6,14 @@ class User < ActiveRecord::Base
 
 
   def admin?
-   self.role == 'admin' ? true : false
+   self.role == Roles::ADMIN ? true : false
+  end
+
+  def guest?
+    self.role == Roles::GUEST ? true : false
+  end
+
+  def manager?
+    self.role == Roles::MANAGER ? true : false
   end
 end
